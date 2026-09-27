@@ -1,0 +1,2180 @@
+BUILD A PRODUCTION-READY WEBSITE FOR EMARV HOMES & PROPERTIES
+
+
+
+You are an expert senior frontend engineer, UI/UX designer, accessibility specialist, SEO specialist, and production web architect.
+
+
+
+Your task is to build a complete, production-oriented real-estate website for:
+
+
+
+Business: Emarv Homes & Properties
+
+
+
+The website must feel like a real business website that could be handed over to the client, not a generic AI-generated demo or template.
+
+
+
+---
+
+
+
+1. TECHNOLOGY — NON-NEGOTIABLE
+
+
+
+Use:
+
+
+
+* Next.js
+
+* React
+
+* TypeScript
+
+* Tailwind CSS
+
+
+
+Use the current stable versions available in the environment.
+
+
+
+Architecture should be clean, maintainable, reusable, and production-ready.
+
+
+
+Do NOT switch to:
+
+
+
+* WordPress
+
+* PHP
+
+* plain HTML-only architecture
+
+* another frontend framework
+
+* unnecessary UI frameworks
+
+* a page-builder-style implementation
+
+
+
+Use TypeScript throughout the application.
+
+
+
+Prefer the Next.js App Router architecture.
+
+
+
+---
+
+
+
+2. PRIMARY OBJECTIVE
+
+
+
+The website should help Emarv Homes & Properties:
+
+
+
+1. Present available properties professionally.
+
+2. Build trust with potential clients.
+
+3. Make property discovery easy.
+
+4. Convert visitors into enquiries.
+
+5. Make contacting the business extremely easy.
+
+6. Establish a stronger digital presence beyond social media.
+
+7. Provide a professional place that can be shared from Instagram, Facebook, TikTok, Google, WhatsApp, and other channels.
+
+8. Make the business and its property offerings look credible and organized.
+
+
+
+The website should complement the company's existing social-media presence rather than pretending that social media is unsuccessful.
+
+
+
+Do NOT design the website around the assumption that the business has no audience or existing reputation.
+
+
+
+---
+
+
+
+3. DESIGN DIRECTION
+
+
+
+Create a premium, modern Nigerian real-estate aesthetic.
+
+
+
+The design should communicate:
+
+
+
+* trust
+
+* professionalism
+
+* credibility
+
+* quality
+
+* accessibility
+
+* clarity
+
+* modern real estate
+
+* local relevance
+
+
+
+Avoid the appearance of:
+
+
+
+* a generic SaaS website
+
+* a cryptocurrency website
+
+* a startup landing page
+
+* a cheap real-estate template
+
+* an over-designed luxury website
+
+* an AI-generated website
+
+
+
+The design should be clean and confident rather than flashy.
+
+
+
+Use strong visual hierarchy, generous spacing, high-quality property imagery, readable typography, restrained animation, and clear calls to action.
+
+
+
+---
+
+
+
+4. MOBILE-FIRST REQUIREMENT
+
+
+
+This is extremely important.
+
+
+
+Design and implement the website mobile-first.
+
+
+
+Assume a large percentage of visitors will arrive from mobile devices, especially through social media and WhatsApp.
+
+
+
+The mobile experience must NOT feel like a shrunken desktop website.
+
+
+
+Pay particular attention to:
+
+
+
+* navigation
+
+* property cards
+
+* image galleries
+
+* buttons
+
+* enquiry forms
+
+* WhatsApp CTA
+
+* typography
+
+* spacing
+
+* touch targets
+
+* sticky actions
+
+* loading performance
+
+
+
+Then create polished layouts for:
+
+
+
+* mobile
+
+* tablet
+
+* laptop
+
+* desktop
+
+* large desktop screens
+
+
+
+Test every important component at multiple viewport widths.
+
+
+
+---
+
+
+
+5. WEBSITE STRUCTURE
+
+
+
+Build the following primary pages:
+
+
+
+Home
+
+
+
+The homepage should contain:
+
+
+
+Hero section
+
+
+
+Create a strong real-estate hero section with:
+
+
+
+* compelling headline
+
+* concise supporting statement
+
+* primary CTA
+
+* secondary CTA
+
+* professional property imagery
+
+* subtle visual treatment
+
+
+
+The headline should communicate that Emarv helps people find suitable property opportunities.
+
+
+
+Do not make unsupported claims.
+
+
+
+Example direction:
+
+
+
+"Find the Right Property. Make the Right Move."
+
+
+
+But treat this as a design/content direction rather than blindly assuming it is the final official slogan.
+
+
+
+CTA examples:
+
+
+
+* Explore Properties
+
+* Contact Us
+
+* WhatsApp Us
+
+
+
+---
+
+
+
+Featured Properties
+
+
+
+Display selected property listings using reusable property cards.
+
+
+
+Each card should support:
+
+
+
+* property image
+
+* property title
+
+* location
+
+* property type
+
+* price when available
+
+* short status indicator
+
+* CTA
+
+
+
+Examples:
+
+
+
+* View Property
+
+* Enquire Now
+
+
+
+Do not invent property information.
+
+
+
+If actual listing data has not been supplied, create clearly structured placeholder data that is easy to replace later and mark it internally as sample content.
+
+
+
+Do NOT present fictional properties as real Emarv listings.
+
+
+
+---
+
+
+
+6. PROPERTY LISTINGS
+
+
+
+Create a proper property listing architecture.
+
+
+
+Use reusable data structures rather than hardcoding every property page independently.
+
+
+
+Each property should be represented by structured TypeScript data.
+
+
+
+Example conceptual structure:
+
+
+
+Property:
+
+
+
+* id
+
+* slug
+
+* title
+
+* location
+
+* propertyType
+
+* price
+
+* status
+
+* description
+
+* images
+
+* features
+
+* specifications
+
+* enquiry information
+
+
+
+Build reusable components for:
+
+
+
+* PropertyCard
+
+* PropertyGrid
+
+* PropertyGallery
+
+* PropertyDetails
+
+* PropertyFeatures
+
+* PropertyEnquiry
+
+* RelatedProperties
+
+
+
+---
+
+
+
+7. PROPERTY DETAIL PAGE
+
+
+
+Create dynamic property pages.
+
+
+
+Example:
+
+
+
+`/properties/[slug]`
+
+
+
+A property page should include:
+
+
+
+* image gallery
+
+* property title
+
+* location
+
+* price
+
+* property status
+
+* property type
+
+* description
+
+* key features
+
+* property details
+
+* enquiry CTA
+
+* WhatsApp CTA
+
+* contact information
+
+* related properties
+
+
+
+Make the enquiry action highly visible.
+
+
+
+On mobile, consider a sticky bottom action area containing:
+
+
+
+* WhatsApp
+
+* Enquire
+
+
+
+Do not overwhelm the visitor with unnecessary information.
+
+
+
+---
+
+
+
+8. PROPERTY SEARCH / FILTERING
+
+
+
+Where appropriate, provide a clean property discovery interface.
+
+
+
+Support useful filters such as:
+
+
+
+* property type
+
+* location
+
+* status
+
+* price range
+
+
+
+Only implement filters that correspond to actual available property data.
+
+
+
+The filtering experience must work properly on mobile.
+
+
+
+Do not create fake filters that do nothing.
+
+
+
+---
+
+
+
+9. ABOUT PAGE
+
+
+
+Create an About page that presents Emarv Homes & Properties professionally.
+
+
+
+Include sections for:
+
+
+
+* company introduction
+
+* what the company does
+
+* approach/service philosophy
+
+* reasons clients choose the business
+
+* trust-building information
+
+* CTA
+
+
+
+Do NOT invent:
+
+
+
+* years in business
+
+* awards
+
+* certifications
+
+* number of properties sold
+
+* number of clients
+
+* company history
+
+* professional credentials
+
+
+
+unless those details are explicitly supplied.
+
+
+
+Use placeholders where factual information is still required.
+
+
+
+---
+
+
+
+10. SERVICES
+
+
+
+Create a services section/page appropriate to the actual business.
+
+
+
+Potential service categories may include:
+
+
+
+* property sales
+
+* land/property opportunities
+
+* property sourcing
+
+* real-estate assistance
+
+* property consultation
+
+
+
+However, do NOT automatically claim that Emarv offers a specific service unless the supplied business information supports it.
+
+
+
+Structure the implementation so services can easily be edited.
+
+
+
+---
+
+
+
+11. TESTIMONIALS / GOOGLE REVIEWS
+
+
+
+This is important.
+
+
+
+Use ONLY genuine positive testimonials supplied from Emarv's Google Reviews.
+
+
+
+Rules:
+
+
+
+* Use positive reviews only.
+
+* Do not use the ambiguous/incomplete Kaine Kuruye review.
+
+* Do not include reviews containing criticism or unresolved concerns.
+
+* Do not invent testimonials.
+
+* Do not rewrite testimonials in a way that changes their meaning.
+
+* Keep wording close to the original review.
+
+* Attribute each testimonial to the actual reviewer.
+
+* Identify the source as Google Reviews.
+
+
+
+For the homepage:
+
+
+
+Display approximately 3–4 of the strongest positive testimonials.
+
+
+
+Create a reusable testimonial/review component so additional verified positive reviews can later be displayed on a dedicated reviews/testimonials page.
+
+
+
+Do not fabricate star ratings if the supplied source data does not contain them.
+
+
+
+---
+
+
+
+12. CONTACT PAGE
+
+
+
+Create a professional contact page.
+
+
+
+Include:
+
+
+
+* phone/contact information when supplied
+
+* WhatsApp CTA
+
+* email when supplied
+
+* business location when supplied
+
+* contact form
+
+* enquiry type
+
+* message field
+
+
+
+The form should have:
+
+
+
+* validation
+
+* useful error messages
+
+* success state
+
+* accessible labels
+
+* keyboard accessibility
+
+
+
+Do not pretend that form submissions are actually delivered somewhere unless a backend/email service has been configured.
+
+
+
+If no backend has been supplied, structure the form so the integration can be added cleanly.
+
+
+
+---
+
+
+
+13. WHATSAPP EXPERIENCE
+
+
+
+WhatsApp is a major conversion channel for this business.
+
+
+
+Make WhatsApp easy to access throughout the website.
+
+
+
+Use appropriate contextual messages.
+
+
+
+For example, from a property page:
+
+
+
+"Hello Emarv Homes & Properties, I'm interested in [Property Name]. I would like to know more about it."
+
+
+
+The actual WhatsApp number must come from supplied business information.
+
+
+
+NEVER invent a phone number.
+
+
+
+Make sure WhatsApp links work correctly on:
+
+
+
+* mobile
+
+* desktop
+
+
+
+---
+
+
+
+14. NAVIGATION
+
+
+
+Create a clean responsive navigation.
+
+
+
+Desktop navigation may include:
+
+
+
+* Home
+
+* Properties
+
+* About
+
+* Services
+
+* Reviews
+
+* Contact
+
+
+
+Include a strong CTA such as:
+
+
+
+"View Properties"
+
+
+
+or
+
+
+
+"Contact Us"
+
+
+
+Mobile navigation must use a polished accessible menu.
+
+
+
+Ensure:
+
+
+
+* keyboard navigation
+
+* proper focus states
+
+* menu open/close behavior
+
+* body scroll handling where appropriate
+
+* accessible ARIA attributes
+
+* no layout jumping
+
+
+
+---
+
+
+
+15. FOOTER
+
+
+
+Create a professional footer containing:
+
+
+
+* Emarv Homes & Properties
+
+* short description
+
+* navigation
+
+* property links
+
+* contact information
+
+* WhatsApp
+
+* social-media links when supplied
+
+* copyright
+
+* legal links if required
+
+
+
+Do not create fake social profiles.
+
+
+
+Only use real URLs supplied by the project.
+
+
+
+---
+
+
+
+16. SOCIAL MEDIA INTEGRATION
+
+
+
+The business already has social-media presence.
+
+
+
+The website should complement it.
+
+
+
+Provide appropriate social links where actual URLs are known.
+
+
+
+Do not invent usernames or links.
+
+
+
+Social media should function as a traffic source into the website.
+
+
+
+The website should be designed so someone coming from an Instagram property post can immediately understand:
+
+
+
+* what the property is
+
+* where it is
+
+* how to enquire
+
+* how to contact Emarv
+
+
+
+---
+
+
+
+17. CALL-TO-ACTION STRATEGY
+
+
+
+Use clear CTAs throughout the website.
+
+
+
+Primary conversion actions:
+
+
+
+1. View Properties
+
+2. Enquire About Property
+
+3. WhatsApp Emarv
+
+4. Contact Emarv
+
+
+
+Avoid excessive CTA repetition.
+
+
+
+CTAs should appear naturally at points where visitors are likely to be ready to act.
+
+
+
+---
+
+
+
+18. TRUST DESIGN
+
+
+
+Trust is a major purpose of the website.
+
+
+
+Use:
+
+
+
+* genuine reviews
+
+* professional property presentation
+
+* clear company information
+
+* transparent property details
+
+* consistent branding
+
+* clear contact information
+
+* polished visual design
+
+* useful FAQs where supported
+
+* professional photography
+
+
+
+Do not manufacture trust signals.
+
+
+
+Do NOT add fake:
+
+
+
+* awards
+
+* certifications
+
+* statistics
+
+* client counts
+
+* guarantees
+
+* partnerships
+
+* badges
+
+* press mentions
+
+
+
+---
+
+
+
+19. FAQ
+
+
+
+Create an FAQ section/page if the supplied business information supports it.
+
+
+
+Questions can cover practical topics such as:
+
+
+
+* How can I enquire about a property?
+
+* How do I contact Emarv?
+
+* Can I schedule a property viewing?
+
+* What information should I provide when making an enquiry?
+
+
+
+Do not make legal, financial, ownership, title, or transaction claims that have not been verified.
+
+
+
+---
+
+
+
+20. SEO
+
+
+
+Implement proper technical SEO.
+
+
+
+Use:
+
+
+
+* semantic HTML
+
+* unique page titles
+
+* meta descriptions
+
+* canonical URLs where appropriate
+
+* Open Graph metadata
+
+* Twitter/X metadata where appropriate
+
+* sitemap
+
+* robots.txt
+
+* structured metadata where appropriate
+
+* descriptive URLs
+
+* proper heading hierarchy
+
+* image alt text
+
+
+
+Property pages should have useful metadata based on their actual data.
+
+
+
+Do not keyword-stuff.
+
+
+
+The website should be structured so it can rank for relevant local real-estate searches when proper business/location information is later supplied.
+
+
+
+---
+
+
+
+21. PERFORMANCE
+
+
+
+Treat performance as a production requirement.
+
+
+
+Optimize:
+
+
+
+* images
+
+* fonts
+
+* JavaScript
+
+* component rendering
+
+* page loading
+
+* unnecessary dependencies
+
+
+
+Use Next.js image optimization appropriately.
+
+
+
+Avoid enormous unoptimized images.
+
+
+
+Do not add unnecessary animation libraries.
+
+
+
+Animations must never make the site feel slow.
+
+
+
+---
+
+
+
+22. ACCESSIBILITY
+
+
+
+Follow modern accessibility practices.
+
+
+
+Ensure:
+
+
+
+* semantic HTML
+
+* proper heading hierarchy
+
+* accessible forms
+
+* keyboard navigation
+
+* visible focus states
+
+* sufficient contrast
+
+* meaningful alt text
+
+* accessible buttons
+
+* accessible navigation
+
+* accessible dialogs
+
+* reduced-motion consideration
+
+* appropriate ARIA only where necessary
+
+
+
+Interactive elements must have appropriate touch target sizes.
+
+
+
+---
+
+
+
+23. ANIMATIONS
+
+
+
+Use subtle professional motion.
+
+
+
+Examples:
+
+
+
+* gentle entrance animations
+
+* image transitions
+
+* hover states
+
+* card interactions
+
+* navigation transitions
+
+
+
+Do NOT use:
+
+
+
+* excessive parallax
+
+* distracting floating objects
+
+* unnecessary page transitions
+
+* excessive bouncing
+
+* slow animations
+
+* animations that interfere with usability
+
+
+
+The website should still feel excellent with animations disabled.
+
+
+
+---
+
+
+
+24. COMPONENT ARCHITECTURE
+
+
+
+Create reusable components.
+
+
+
+Examples:
+
+
+
+* Navbar
+
+* MobileMenu
+
+* Hero
+
+* SectionHeading
+
+* PropertyCard
+
+* PropertyGrid
+
+* PropertyFilter
+
+* PropertyGallery
+
+* PropertyDetails
+
+* TestimonialCard
+
+* TestimonialsSection
+
+* ServiceCard
+
+* CTASection
+
+* ContactForm
+
+* WhatsAppButton
+
+* Footer
+
+* FAQ
+
+* Breadcrumbs
+
+* LoadingState
+
+* EmptyState
+
+* ErrorState
+
+
+
+Do not duplicate large blocks of JSX unnecessarily.
+
+
+
+---
+
+
+
+25. DATA ARCHITECTURE
+
+
+
+Separate content/data from UI components.
+
+
+
+Property information should live in structured TypeScript data.
+
+
+
+Reviews/testimonials should live in structured data.
+
+
+
+Services should live in structured data.
+
+
+
+This should allow the business content to be changed without rewriting components.
+
+
+
+Example conceptual structure:
+
+
+
+`data/properties.ts`
+
+
+
+`data/testimonials.ts`
+
+
+
+`data/services.ts`
+
+
+
+`data/site.ts`
+
+
+
+Do not hardcode business information into dozens of components.
+
+
+
+---
+
+
+
+26. PROJECT STRUCTURE
+
+
+
+Use a clean structure appropriate for Next.js.
+
+
+
+For example:
+
+
+
+app/
+
+components/
+
+data/
+
+lib/
+
+public/
+
+types/
+
+styles/
+
+
+
+Use sensible naming.
+
+
+
+Create reusable TypeScript types/interfaces.
+
+
+
+Avoid unnecessary abstraction.
+
+
+
+The project should be easy for another developer to understand.
+
+
+
+---
+
+
+
+27. ERROR AND EMPTY STATES
+
+
+
+Every dynamic section should handle:
+
+
+
+* loading
+
+* empty
+
+* error
+
+* unavailable data
+
+
+
+Examples:
+
+
+
+If no properties exist:
+
+
+
+"Properties will be available here soon."
+
+
+
+Do not show broken cards or empty blank spaces.
+
+
+
+---
+
+
+
+28. FORBIDDEN BEHAVIOR
+
+
+
+Do NOT:
+
+
+
+* invent business facts
+
+* invent testimonials
+
+* invent property listings
+
+* invent phone numbers
+
+* invent addresses
+
+* invent social-media accounts
+
+* invent awards
+
+* invent certifications
+
+* invent company statistics
+
+* invent customer numbers
+
+* invent prices
+
+* invent property ownership information
+
+* make unsupported legal claims
+
+* create fake integrations
+
+* claim a form sends emails when it does not
+
+* create fake Google reviews
+
+* use Lorem Ipsum in the final visible interface
+
+* leave obviously unfinished UI
+
+* use generic stock copy everywhere
+
+* create dead buttons
+
+* create fake links
+
+* create filters that do not function
+
+* create navigation links that lead nowhere
+
+
+
+If information is missing, use a clearly marked editable placeholder in the source/data layer rather than fabricating information.
+
+
+
+---
+
+
+
+29. CONTENT RULE
+
+
+
+When content has been supplied by the project, use it.
+
+
+
+Do not silently replace supplied content with generic AI-written content.
+
+
+
+When factual information is missing:
+
+
+
+* preserve the structure
+
+* use concise placeholder copy
+
+* make the placeholder easy to replace
+
+* do not represent placeholder information as factual
+
+
+
+---
+
+
+
+30. RESPONSIVE QA
+
+
+
+Before considering the project complete, inspect the website at minimum:
+
+
+
+* 320px
+
+* 375px
+
+* 390px
+
+* 430px
+
+* 768px
+
+* 1024px
+
+* 1280px
+
+* 1440px
+
+* 1920px
+
+
+
+Check for:
+
+
+
+* horizontal scrolling
+
+* overflowing text
+
+* broken grids
+
+* oversized headings
+
+* inaccessible buttons
+
+* broken navigation
+
+* image distortion
+
+* spacing problems
+
+* mobile menu issues
+
+* form problems
+
+* sticky CTA problems
+
+
+
+Fix all issues discovered.
+
+
+
+---
+
+
+
+31. BROWSER / FUNCTIONAL QA
+
+
+
+Verify that:
+
+
+
+* navigation works
+
+* mobile menu works
+
+* property links work
+
+* dynamic property pages work
+
+* filters work if implemented
+
+* WhatsApp links work
+
+* contact form validation works
+
+* buttons work
+
+* links work
+
+* image galleries work
+
+* back navigation works
+
+* 404 handling works
+
+* no obvious console errors remain
+
+
+
+Do not simply generate code and stop.
+
+
+
+Actually inspect the running website.
+
+
+
+---
+
+
+
+32. SECURITY / QUALITY
+
+
+
+Follow safe frontend practices.
+
+
+
+Do not expose secrets in client-side code.
+
+
+
+Do not hardcode API keys.
+
+
+
+Do not put private credentials into source files.
+
+
+
+Environment variables should be used for secrets.
+
+
+
+Sanitize and validate user-controlled input where appropriate.
+
+
+
+---
+
+
+
+33. SEO-FRIENDLY PROPERTY ARCHITECTURE
+
+
+
+Each property should have a unique URL such as:
+
+
+
+`/properties/property-name`
+
+
+
+Property metadata should dynamically reflect:
+
+
+
+* title
+
+* location
+
+* property type
+
+* description
+
+
+
+Use structured data only when the information is accurate and supported.
+
+
+
+---
+
+
+
+34. 404 PAGE
+
+
+
+Create a polished custom 404 page.
+
+
+
+It should clearly communicate that the requested page could not be found and provide useful navigation back to:
+
+
+
+* Home
+
+* Properties
+
+* Contact
+
+
+
+---
+
+
+
+35. BRAND CONSISTENCY
+
+
+
+Create a small internal design system.
+
+
+
+Define consistent:
+
+
+
+* typography
+
+* spacing
+
+* border radius
+
+* buttons
+
+* cards
+
+* shadows
+
+* section spacing
+
+* form styles
+
+* icon treatment
+
+
+
+Do not randomly change styles between sections.
+
+
+
+The entire website should feel like one coherent brand.
+
+
+
+---
+
+
+
+36. IMAGES
+
+
+
+Use supplied property/business imagery whenever available.
+
+
+
+If images are not supplied:
+
+
+
+* structure the system so images can easily be replaced
+
+* do not pretend generic images represent actual Emarv properties
+
+* clearly separate sample/demo assets from actual business assets
+
+
+
+All images must have appropriate dimensions and responsive behavior.
+
+
+
+---
+
+
+
+37. FINAL HOMEPAGE FLOW
+
+
+
+The homepage should generally follow a logical conversion journey:
+
+
+
+1. Navigation
+
+2. Hero
+
+3. Featured Properties
+
+4. Why/How Emarv Helps
+
+5. Services or property categories
+
+6. Trust/Testimonial section
+
+7. CTA
+
+8. Contact/WhatsApp prompt
+
+9. Footer
+
+
+
+Do not blindly follow this order if UX testing shows a better structure, but preserve the underlying conversion logic.
+
+
+
+---
+
+
+
+38. PRODUCTION MINDSET
+
+
+
+Do not think:
+
+
+
+"I'm creating a demo."
+
+
+
+Think:
+
+
+
+"I'm creating the first production version of a real business website."
+
+
+
+The website must therefore have:
+
+
+
+* realistic architecture
+
+* maintainable code
+
+* reusable components
+
+* responsive UI
+
+* accessible interactions
+
+* proper SEO foundations
+
+* clean content architecture
+
+* scalable property architecture
+
+* clear conversion paths
+
+* professional visual design
+
+
+
+However, do not fabricate business information simply to make it look complete.
+
+
+
+---
+
+
+
+39. BEFORE COMPLETION — SELF-AUDIT
+
+
+
+Before declaring the project finished, perform a complete self-audit.
+
+
+
+Check:
+
+
+
+Design
+
+
+
+* Is the website visually professional?
+
+* Does it feel like a real estate company?
+
+* Does it feel trustworthy?
+
+* Is the hierarchy clear?
+
+* Is mobile excellent?
+
+
+
+Content
+
+
+
+* Did you invent anything?
+
+* Are testimonials genuine?
+
+* Are only approved positive reviews used?
+
+* Are all business facts supported?
+
+* Are placeholders clearly isolated?
+
+
+
+Functionality
+
+
+
+* Do all buttons work?
+
+* Do all links work?
+
+* Do property pages work?
+
+* Does the mobile menu work?
+
+* Does WhatsApp work?
+
+* Does form validation work?
+
+
+
+Code
+
+
+
+* Is TypeScript used correctly?
+
+* Are components reusable?
+
+* Is content separated from UI?
+
+* Is there unnecessary duplication?
+
+* Are there console errors?
+
+
+
+Responsive
+
+
+
+* Does it work at 320px?
+
+* Does it work at 375px?
+
+* Does it work at tablet width?
+
+* Does it work on desktop?
+
+* Is there horizontal overflow?
+
+
+
+SEO
+
+
+
+* Are metadata and headings correct?
+
+* Are images optimized?
+
+* Is the sitemap configured?
+
+* Is robots.txt configured?
+
+* Are URLs clean?
+
+
+
+Accessibility
+
+
+
+* Can the site be navigated by keyboard?
+
+* Are forms accessible?
+
+* Are buttons labelled?
+
+* Are focus states visible?
+
+* Are contrast and readability acceptable?
+
+
+
+Fix discovered problems before completing the build.
+
+
+
+---
+
+
+
+40. IMPORTANT IMPLEMENTATION RULE
+
+
+
+Do not stop after creating the homepage.
+
+
+
+Build the complete website architecture and all required pages/components.
+
+
+
+Do not return a partially implemented mockup.
+
+
+
+Do not replace functional requirements with screenshots or static visual representations.
+
+
+
+The final result must be a functioning Next.js + React + TypeScript + Tailwind CSS application.
+
+
+
+---
+
+
+
+41. FINAL DELIVERABLE
+
+
+
+Deliver:
+
+
+
+* complete source code
+
+* complete responsive UI
+
+* reusable components
+
+* structured property data
+
+* structured testimonial data
+
+* structured service data
+
+* all required pages
+
+* dynamic property routes
+
+* SEO foundations
+
+* responsive navigation
+
+* contact/enquiry experience
+
+* WhatsApp conversion paths
+
+* accessibility considerations
+
+* error/empty states
+
+* production-quality styling
+
+
+
+At the end, provide a concise implementation summary containing:
+
+
+
+1. Pages created
+
+2. Major components created
+
+3. Main data structures
+
+4. Features implemented
+
+5. Any information still required from Emarv
+
+6. Any integrations still requiring configuration
+
+7. Any assumptions made
+
+
+
+Do not claim something is implemented if it is not.
+
+
+
+Build the website now.
+
+
+please the website to look very real estate (home and properties) website and do not make the website too look like ai website rather make it look professional both the font texts/ write up words
+
+pick either " homepage-drone-gated-entry.jpg " or " DnRtz.jpg " and use it as the website homepage
+
+
+
+while " d6c1b7f4-d7b6-4854-9687-1dd9c2e0f46b_removalai_preview (1).png " is the website consistent logo
+
+build something extraordinary as a senior developer.
